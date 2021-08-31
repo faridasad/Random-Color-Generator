@@ -1,0 +1,64 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 70px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #2b2d2f;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    padding: 50px;
+    background-color: #2b2d2f;
+    margin-bottom: 110px;
+}
+#txt{
+    color: #fff;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 41px;
+}
+.buttons-container{
+    display: flex;
+    margin-top: 40px;
+}
+#change-btn {
+    width: 100px;
+    height: 35px;
+    color:#2b2d2f;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+    cursor: pointer;
+    border: 0px transparent;
+    border-radius: 3px;
+    margin-left: 20px;
+    transition: .2s all;
+}
+#change-btn:hover{
+    background-color: #c0c0c0;
+}
+#previous-btn{
+    width: 100px;
+    height: 35px;
+    color:#2b2d2f;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+    cursor: pointer;
+    border: 0px transparent;
+    border-radius: 3px;
+    transition: .2s all;
+}
+#previous-btn:hover{
+    background-color: #c0c0c0;
+}
