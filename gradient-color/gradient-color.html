@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Color Generator</title>
+    <link rel="icon" href="../titleIcon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="gradient-color-css.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 class="header">
+      Random Gradient <br />
+      Color Code
+    </h1>
+    <div class="container">
+      <h1 id="txt">
+        #FFFFFF
+        <i id="linear-icon" class="fas fa-angle-double-right"></i> #000000
+      </h1>
+      <div class="radio-buttons">
+        <label for="r-option" class="l-radio">
+          <input
+            type="radio"
+            id="r-option"
+            name="selector"
+            tabindex="1"
+            checked="checked"
+          />
+          <span class="radio-text">to Right</span>
+        </label>
+        <label for="l-option" class="l-radio">
+          <input type="radio" id="l-option" name="selector" tabindex="2" />
+          <span class="radio-text">to Left</span>
+        </label>
+        <label for="u-option" class="l-radio">
+          <input type="radio" id="u-option" name="selector" tabindex="3" />
+          <span class="radio-text" class="radio-text">to Up</span>
+        </label>
+        <label for="d-option" class="l-radio">
+          <input type="radio" id="d-option" name="selector" tabindex="3" />
+          <span class="radio-text">to Down</span>
+        </label>
+      </div>
+      <div class="buttons-container">
+        <button id="previous-btn">Previous</button>
+        <button id="change-btn">Change</button>
+        <button id="copy-code-button">Copy Css Code</button>
+      </div>
+    </div>
+    <a class="coolBeans" href="../random-color/random-color.html">Random Color</a>
+    <script src="gradient-color-script.js"></script>
+  </body>
+</html>

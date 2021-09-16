@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to right, #ffffff, #000000);
+}
+
+.header {
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 70px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #2b2d2f;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 400px;
+  padding: 40px;
+  padding-top: 10px;
+  background-color: #2b2d2f;
+  margin-bottom: 110px;
+  white-space: nowrap;
+}
+#txt {
+  padding: 15px;
+  color: #fff;
+  font-family: "Source Code Pro", monospace;
+  font-size: 33px;
+}
+#linear-icon {
+  font-size: 25px;
+}
+
+.radio-buttons {
+  transform: scale(0.9);
+}
+.radio-text {
+  color: #fff;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 100;
+}
+
+.l-radio {
+  padding: 6px;
+  border-radius: 50px;
+  display: inline-flex;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  margin: 8px 0;
+  -webkit-tap-highlight-color: transparent;
+}
+.l-radio:hover,
+.l-radio:focus-within {
+  background: rgba(159, 159, 159, 0.1);
+}
+.l-radio input {
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: none;
+  border: 0;
+  box-shadow: inset 0 0 0 1px #9f9f9f;
+  box-shadow: inset 0 0 0 1.5px #9f9f9f;
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  transition: box-shadow 150ms cubic-bezier(0.95, 0.15, 0.5, 1.25);
+  pointer-events: none;
+}
+.l-radio input:focus {
+  outline: none;
+}
+.l-radio input:checked {
+  box-shadow: inset 0 0 0 6px #6743ee;
+}
+.l-radio span {
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 20px;
+  padding: 0 8px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+#change-btn {
+  width: 100px;
+  height: 35px;
+  color: #2b2d2f;
+  font-family: "Source Code Pro", monospace;
+  font-weight: bold;
+  cursor: pointer;
+  border: 0px transparent;
+  border-radius: 3px;
+  margin-left: 20px;
+  transition: 0.2s all;
+}
+#change-btn:hover {
+  background-color: #c0c0c0;
+}
+#previous-btn {
+  width: 100px;
+  height: 35px;
+  color: #2b2d2f;
+  font-family: "Source Code Pro", monospace;
+  font-weight: bold;
+  cursor: pointer;
+  border: 0px transparent;
+  border-radius: 3px;
+  transition: 0.2s all;
+}
+#previous-btn:hover {
+  background-color: #c0c0c0;
+}
+
+#copy-code-button {
+  width: 130px;
+  height: 35px;
+  color: #2b2d2f;
+  font-family: "Source Code Pro", monospace;
+  font-weight: bold;
+  cursor: pointer;
+  border: 0px transparent;
+  border-radius: 3px;
+  transition: 0.2s all;
+  margin-top: 20px;
+  margin-left: 0.5px;
+}
+
+.coolBeans {
+  border: 2px solid currentColor;
+  border-radius: 3rem;
+  color: #fff;
+  font-family: "Source Code Pro", monospace;
+  font-size: 2.2rem;
+  font-weight: 100;
+  overflow: hidden;
+  padding: 1rem 2rem;
+  position: relative;
+  bottom: 50px;
+  text-decoration: none;
+  transition: 0.2s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
+}
+.coolBeans::after {
+  background-color: #ffffff;
+  border-radius: 3rem;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+.coolBeans:hover::after {
+  transform: translate(0, 0);
+}
+.coolBeans:hover {
+  border: 2px solid transparent;
+  color: #2b2d2f;
+  transform: scale(1.05);
+  will-change: transform;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 310px;
+    padding: 20px;
+  }
+  #txt {
+    font-size: 25px;
+  }
+  .radio-buttons {
+    transform: scale(0.75);
+  }
+  .buttons-container {
+    margin-bottom: 20px;
+  }
+  .coolBeans{
+    font-size: 2rem;
+  }
+}

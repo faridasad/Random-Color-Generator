@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 70px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #2b2d2f;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+  padding: 40px;
+  background-color: #2b2d2f;
+  margin-bottom: 110px;
+}
+#txt {
+  color: #fff;
+  font-family: "Source Code Pro", monospace;
+  font-size: 41px;
+}
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+#change-btn {
+  width: 100px;
+  height: 35px;
+  color: #2b2d2f;
+  font-family: "Source Code Pro", monospace;
+  font-weight: bold;
+  cursor: pointer;
+  border: 0px transparent;
+  border-radius: 3px;
+  transition: 0.2s all;
+  margin-left: 20px;
+}
+#change-btn:hover {
+  background-color: #c0c0c0;
+}
+#previous-btn {
+  width: 100px;
+  height: 35px;
+  color: #2b2d2f;
+  font-family: "Source Code Pro", monospace;
+  font-weight: bold;
+  cursor: pointer;
+  border: 0px transparent;
+  border-radius: 3px;
+  transition: 0.2s all;
+}
+#previous-btn:hover {
+  background-color: #c0c0c0;
+}
+#copy-code-button {
+  width: 130px;
+  height: 35px;
+  color: #2b2d2f;
+  font-family: "Source Code Pro", monospace;
+  font-weight: bold;
+  cursor: pointer;
+  border: 0px transparent;
+  border-radius: 3px;
+  transition: 0.2s all;
+  margin-top: 20px;
+  margin-left: 0.5px;
+}
+
+.gradient-href {
+  color: #2b2d2f;
+  font-family: "Titillium Web", sans-serif;
+}
+.gradient-href-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 50px;
+  margin: 20px auto;
+  width: 400px;
+  height: 150px;
+  background: transparent;
+  border-radius: 75px;
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  transition: 1s box-shadow;
+}
+
+.gradient-href-container:hover::before,
+.gradient-href-container:hover::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 150px;
+  background: #fda8cf;
+  border-radius: 75px;
+  z-index: -1;
+  animation: 1s clockwise infinite;
+}
+
+.gradient-href-container:hover:after {
+  background: #f3ce5e;
+  animation: 2s counterclockwise infinite;
+}
+
+@keyframes clockwise {
+  0% {
+    top: -5px;
+    left: 0;
+  }
+  12% {
+    top: -2px;
+    left: 2px;
+  }
+  25% {
+    top: 0;
+    left: 5px;
+  }
+  37% {
+    top: 2px;
+    left: 2px;
+  }
+  50% {
+    top: 5px;
+    left: 0;
+  }
+  62% {
+    top: 2px;
+    left: -2px;
+  }
+  75% {
+    top: 0;
+    left: -5px;
+  }
+  87% {
+    top: -2px;
+    left: -2px;
+  }
+  100% {
+    top: -5px;
+    left: 0;
+  }
+}
+
+@keyframes counterclockwise {
+  0% {
+    top: -5px;
+    right: 0;
+  }
+  12% {
+    top: -2px;
+    right: 2px;
+  }
+  25% {
+    top: 0;
+    right: 5px;
+  }
+  37% {
+    top: 2px;
+    right: 2px;
+  }
+  50% {
+    top: 5px;
+    right: 0;
+  }
+  62% {
+    top: 2px;
+    right: -2px;
+  }
+  75% {
+    top: 0;
+    right: -5px;
+  }
+  87% {
+    top: -2px;
+    right: -2px;
+  }
+  100% {
+    top: -5px;
+    right: 0;
+  }
+}
+
+/* mobile devices */
+@media (max-width: 600px) {
+  .gradient-href-container {
+    width: 300px;
+  }
+  .gradient-href-container:hover::before,
+  .gradient-href-container:hover::after {
+    width: 180px;
+    height: 150px;
+  }
+}
