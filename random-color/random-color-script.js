@@ -45,6 +45,6 @@ copy_code_btn.addEventListener("click", () => {
   document.body.removeChild(dummy);
   copy_code_btn.innerText = "Code Copied!";
   setTimeout(() => {
-    copy_code_btn.innerText = "Copy Code";
+    copy_code_btn.innerText = "Copy Hex Code";
   }, 1300);
 });
