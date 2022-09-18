@@ -22,12 +22,7 @@ const randomColorCode2 = () => {
   return hexCode2;
 };
 const copyText = (text) => {
-  var dummy = document.createElement("textarea");
-  document.body.appendChild(dummy);
-  dummy.value = text;
-  dummy.select();
-  document.execCommand("copy");
-  document.body.removeChild(dummy);
+  navigator.clipboard.writeText(text)
 };
 
 change_btn.addEventListener("click", () => {

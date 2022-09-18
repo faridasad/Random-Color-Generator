@@ -36,13 +36,7 @@ previous_btn.addEventListener("click", () => {
 
 copy_code_btn.addEventListener("click", () => {
   var txt = document.getElementById("txt").textContent;
-  console.log(txt);
-  var dummy = document.createElement("textarea");
-  document.body.appendChild(dummy);
-  dummy.value = txt;
-  dummy.select();
-  document.execCommand("copy");
-  document.body.removeChild(dummy);
+  navigator.clipboard.writeText(txt)
   copy_code_btn.innerText = "Code Copied!";
   setTimeout(() => {
     copy_code_btn.innerText = "Copy Hex Code";
